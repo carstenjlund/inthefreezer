@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-rgb: 214, 219, 220;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: rgb(var(--background-rgb));
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+
+dialog {
+/*  position: fixed;
+overflow-x: auto;
+overflow-y: auto;*/
+inset-block-start: 0px;
+inset-block-end: 0px;
+/*max-width: calc(100% - 2em - 6px);
+max-height: calc(100% - 2em - 6px);
+visibility: visible;*/
+}
+
