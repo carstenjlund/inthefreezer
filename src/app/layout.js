@@ -1,4 +1,5 @@
 import { Inter } from "next/font/google";
+import Link from "next/link";
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -12,6 +13,13 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={inter.className}>
+        <header className="py-4 px-8 flex justify-end">
+          <nav>
+            <Link className="p-2 border-2 border-black rounded-lg" href="/">
+              Vælge/ændre sted
+            </Link>
+          </nav>
+        </header>
         <main className=" p-8">{children}</main>
       </body>
     </html>
