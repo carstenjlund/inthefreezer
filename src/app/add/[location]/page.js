@@ -33,8 +33,11 @@ export default async function AddItemByLocation({ params }) {
             <option>Enhed:</option>
             <option value="ml">ml</option>
             <option value="l">l</option>
+            <option>----</option>
             <option value="g">g</option>
             <option value="kg">kg</option>
+            <option>----</option>
+            <option value="stk">stk</option>
           </select>
         </div>
       </div>
