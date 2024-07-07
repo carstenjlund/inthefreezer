@@ -26,6 +26,8 @@ export async function saveItem(formdata) {
     return newItem;
   } catch (error) {
     console.error("Failed to create item:", error);
+  } finally {
+    redirect("?redirect=true");
   }
 }
 
