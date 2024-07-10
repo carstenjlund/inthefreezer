@@ -15,7 +15,7 @@ export default async function LocationPage({}) {
   return (
     <>
       <h1 className="font-bold text-2xl mb-4">Brug varer fra:</h1>
-
+      <p>hello</p>
       {locations.map((location) => (
         <article className="mb-2" key={location.id}>
           <Link

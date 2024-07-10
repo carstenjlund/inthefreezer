@@ -12,6 +12,25 @@ export const getItems = async function (location) {
   return items;
 };
 
+export async function saveItem(formdata) {
+  let data = Object.fromEntries(formdata);
+  try {
+    let newItem = await prisma.item.create({
+      data: {
+        name: data.name,
+        amount: data.amount + " " + data.unit,
+        locationId: parseInt(data.locationId),
+      },
+    });
+    console.log(newItem);
+    return newItem;
+  } catch (error) {
+    console.error("Failed to create item:", error);
+  } finally {
+    redirect("?redirect=true");
+  }
+}
+
 export async function deleteItem(formdata) {
   let id = parseInt(formdata.get("id"));
   let location = formdata.get("location");
@@ -26,4 +45,9 @@ export async function deleteItem(formdata) {
   } finally {
     redirect("/items/" + location);
   }
+}
+
+export async function getLocations() {
+  let locations = await prisma.location.findMany();
+  return locations;
 }

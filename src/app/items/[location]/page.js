@@ -8,9 +8,16 @@ export default async function LocationPage({ params }) {
       <h1 className="font-bold text-2xl mb-4">Varer på {params.location}</h1>
       <ul className="space-y-4">
         {items.map((item) => (
-          <li key={item.id} className="flex items-baseline gap-1">
-            <span className="font-bold text-lg mb-2">{item.name}</span>{" "}
-            {item.amount} / {item.location.place}
+          <li
+            key={item.id}
+            className="flex items-end gap-1 pb-4 border-b border-gray-400"
+          >
+            <div>
+              <h3 className="font-bold text-lg">{item.name}</h3>
+              <p>
+                {item.amount} / {item.location.place}
+              </p>
+            </div>
             <form className="ml-auto">
               <input type="hidden" name="confirm" value="true" />
               <input type="hidden" name="name" value={item.name} />
