@@ -5,7 +5,7 @@ export default async function LocationPage({ params }) {
 
   return (
     <>
-      <h1 className="font-bold text-2xl mb-4">Varer på {params.location}</h1>
+      <h1 className="font-bold text-2xl mb-4">Varer i {params.location}</h1>
       <ul className="space-y-4">
         {items.map((item) => (
           <li

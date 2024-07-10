@@ -9,6 +9,7 @@ export const getItems = async function (location) {
     include: { location: { select: { place: true } } },
     orderBy: { name: "asc" },
   });
+  console.log(items);
   return items;
 };
 
