@@ -16,9 +16,9 @@ export default function ConfirmPage() {
     <>
       <div className="fixed inset-0 w h-full bg-black opacity-60"></div>
       <dialog open className="p-4 border border-black">
-        Bruger du varen "{name}"?
+        Bruger du varen &quot;{name}&quot;?
         <br />
-        <small>Hvis du klikker "bekræft" slettes varen fra oversigten.</small>
+        <small>Hvis du klikker &quot;bekræft&quot; slettes varen fra oversigten.</small>
         <div className="mt-4 flex justify-end gap-2">
           <Link
             className="p-2 border border-black rounded-lg"
