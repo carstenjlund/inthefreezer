@@ -9,12 +9,6 @@ export default function SignIn() {
         className="flex justify-center items-center flex-col space-y-4"
         action={async (formData) => {
           "use server";
-          //e.preventDefault()
-          //const formData = new FormData(e.target);
-          //const data = {
-          //  email: formData.get("email"),
-          //  password: formData.get("password"),
-          //};
           const data = Object.fromEntries(formData);
           //await signIn("credentials",  {...data, callbackUrl:"/dashboard" })
           await signIn("credentials", {
