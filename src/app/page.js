@@ -6,7 +6,7 @@ export default function Home() {
 
       <article className="mb-2">
         <Link
-          href={"items/Strandboulevarden"}
+          href="items/Strandboulevarden"
           className="font-bold text-lg mb-2 min-w-80 py-4 bg-green-700 text-white text-center block rounded-xl"
         >
           Strandboulevarden
@@ -14,7 +14,7 @@ export default function Home() {
       </article>
       <article className="mb-2">
         <Link
-          href={"items/Arvedsvej"}
+          href="items/Arvedsvej"
           className="font-bold text-lg mb-2 min-w-80 py-4 bg-green-700 text-white text-center block rounded-xl"
         >
           Arvedsvej
@@ -25,7 +25,7 @@ export default function Home() {
       </h1>
       <article className="mb-2">
         <Link
-          href={"add/Strandboulevarden"}
+          href="add/Strandboulevarden"
           className="font-bold text-lg mb-2 min-w-80 py-4 bg-gray-500 text-white text-center block rounded-xl"
         >
           Strandboulevarden
@@ -33,7 +33,7 @@ export default function Home() {
       </article>
       <article className="mb-2">
         <Link
-          href={"add/Arvedsvej"}
+          href="add/Arvedsvej"
           className="font-bold text-lg mb-2 min-w-80 py-4 bg-gray-500 text-white text-center block rounded-xl"
         >
           Arvedsvej
